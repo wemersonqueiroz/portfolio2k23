@@ -1,3 +1,4 @@
+import MatrixAnimation from "@/components/MatrixAnimation"
 import Navbar from "@/components/Navbar"
 import PageWrapper from "@/components/PageWrapper"
 import { ThemeProvider } from "@/components/ThemeContext"
@@ -12,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <PageWrapper>
         <Component {...pageProps} />
       </PageWrapper>
+      <MatrixAnimation />
     </ThemeProvider>
   )
 }

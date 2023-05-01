@@ -59,10 +59,7 @@ const MatrixAnimation: React.FC<MatrixAnimationProps> = ({
   }, [canvasRef, fontSize, speed, textColor, backgroundColor])
 
   return (
-    <canvas
-      ref={canvasRef}
-      className="absolute inset-0 z-[-1] duration-1000 ease-linear "
-    />
+    <canvas ref={canvasRef} className="absolute inset-0 -z-[1] ease-linear " />
   )
 }
 

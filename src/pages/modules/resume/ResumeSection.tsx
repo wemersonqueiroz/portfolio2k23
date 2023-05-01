@@ -51,9 +51,7 @@ const ResumeSection = (props: ResumeSectionProps) => {
         <i className="text-3xl text-primary-light drop-shadow-sm">
           <FaGraduationCap />
         </i>
-        <h2 className="text-xl font-bold text-black dark:text-white">
-          {props.sectionTitle}
-        </h2>
+        <h2 className="text-xl font-bold text-white">{props.sectionTitle}</h2>
       </div>
       {subSectionWork.map((subSectionWorkItem, index) => (
         <div
@@ -90,9 +88,7 @@ const ResumeSection = (props: ResumeSectionProps) => {
         </div>
       ))}
       <div className="flex flex-col w-full gap-2 mt-5">
-        <h2 className="text-xl font-bold text-black dark:text-white">
-          Knowledges
-        </h2>
+        <h2 className="text-xl font-bold text-white">Knowledges</h2>
         <div className="flex flex-wrap gap-2">
           {knowledges.map((knowledgeItem, index) => (
             <p
