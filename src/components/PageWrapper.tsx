@@ -14,7 +14,7 @@ export default function PageWrapper(props: PageWrapperProps) {
     <div className="z-[2] flex flex-col min-h-screen ">
       <main
         suppressHydrationWarning
-        className={`flex-1 flex h-full flex-col items-center justify-between px-4 relative pb-20 mt-32 ${
+        className={`flex-1 flex h-full flex-col items-center justify-between px-4 relative pb-20 mt-20 ${
           inter.className
         } ${darkMode ? "dark" : ""}`}>
         {props.children}
