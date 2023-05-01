@@ -30,7 +30,9 @@ const AnimatedLabelInput = (props: AnimatedLabelInputProps) => {
         type={props.inputType || "text"}
         id={props.htmlFor}
         autoComplete="off"
-        className={`w-full p-2 border-b-2 focus:outline-none bg-transparent appearance-none invalid:border-b-red-500 dark:invalid:border-red-500
+        className={`w-full p-2 border-b-2 focus:outline-none bg-transparent appearance-none ${
+          hasValue && "invalid:border-b-red-500 dark:invalid:border-red-500"
+        }
 
         ${
           isFocused || hasValue
