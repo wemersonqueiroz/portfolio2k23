@@ -6,9 +6,13 @@ import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 
 const contact: NextPage = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" })
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    const [formData, setFormData] = useState({
+      name: "",
+      email: "",
+      message: "",
+    })
+
     e.preventDefault()
 
     try {
