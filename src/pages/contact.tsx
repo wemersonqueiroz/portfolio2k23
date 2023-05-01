@@ -1,6 +1,5 @@
 import H1 from "@/components/H1"
 import { NextPage } from "next"
-import { useState } from "react"
 import AnimatedLabelInput from "./modules/contact/AnimatedLabelInput"
 
 const contact: NextPage = () => {
