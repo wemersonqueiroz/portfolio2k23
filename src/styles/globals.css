@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
+#__next {
+  @apply h-full p-0 m-0 overflow-scroll;
+}
+
+canvas {
+  @apply block;
+}
+
 .screen:after {
   width: 25%;
   bottom: 0rem;

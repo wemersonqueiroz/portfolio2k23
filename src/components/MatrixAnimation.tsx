@@ -61,7 +61,7 @@ const MatrixAnimation: React.FC<MatrixAnimationProps> = ({
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 -z-[1] ease-linear h-screen "
+      className="absolute inset-0 -z-[1] ease-linear h-screen w-screen "
     />
   )
 }
