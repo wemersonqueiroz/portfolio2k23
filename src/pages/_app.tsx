@@ -3,12 +3,12 @@ import PageWrapper from "@/components/PageWrapper"
 import { ThemeProvider } from "@/components/ThemeContext"
 import "@/styles/globals.css"
 import type { AppProps } from "next/app"
+import { ToastContainer } from "react-toastify"
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider>
       <Navbar />
-
       <PageWrapper>
         <Component {...pageProps} />
       </PageWrapper>
