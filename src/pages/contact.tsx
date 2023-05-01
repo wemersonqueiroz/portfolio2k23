@@ -4,15 +4,6 @@ import { useState } from "react"
 import AnimatedLabelInput from "./modules/contact/AnimatedLabelInput"
 
 const contact: NextPage = () => {
-  const [isFocused, setIsFocused] = useState(false)
-
-  const handleFocus = () => {
-    setIsFocused(true)
-  }
-
-  const handleBlur = () => {
-    setIsFocused(false)
-  }
   return (
     <div className="flex flex-col w-full">
       <H1 text="Contact" />
