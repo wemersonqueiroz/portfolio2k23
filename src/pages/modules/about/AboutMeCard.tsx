@@ -7,7 +7,7 @@ import {
   FaMobileAlt,
   FaTwitter,
   FaWhatsapp,
-} from "react-icons/Fa"
+} from "react-icons/fa"
 import ContactField from "./ContactField"
 
 export default function AboutMeCard() {

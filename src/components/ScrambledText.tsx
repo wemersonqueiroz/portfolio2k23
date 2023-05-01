@@ -22,13 +22,14 @@ export default function ScrambleText(props: ScrambleTextProps) {
         }
 
         interval = window.setInterval(() => {
-          if (nameRef.current) {
-            nameRef.current.innerText = nameRef.current.innerText
+          const currentNameRef = nameRef.current // Store the current value in a variable
+          if (currentNameRef) {
+            currentNameRef.innerText = currentNameRef.innerText
               .split("")
               .map((letter, index) => {
                 if (index < iteration) {
-                  return nameRef.current?.dataset.value
-                    ? nameRef.current.dataset.value[index]
+                  return currentNameRef.dataset.value
+                    ? currentNameRef.dataset.value[index]
                     : ""
                 }
 
@@ -38,9 +39,9 @@ export default function ScrambleText(props: ScrambleTextProps) {
           }
 
           if (
-            nameRef.current &&
-            nameRef.current.dataset.value &&
-            iteration >= nameRef.current.dataset.value.length
+            currentNameRef &&
+            currentNameRef.dataset.value &&
+            iteration >= currentNameRef.dataset.value.length
           ) {
             clearInterval(interval)
           }
@@ -49,13 +50,15 @@ export default function ScrambleText(props: ScrambleTextProps) {
         }, 30)
       }
 
-      if (nameRef.current) {
-        nameRef.current.addEventListener("mouseenter", handleMouseEnter)
+      const initialNameRef = nameRef.current // Store the initial value in a variable
+
+      if (initialNameRef) {
+        initialNameRef.addEventListener("mouseenter", handleMouseEnter)
       }
 
       return () => {
-        if (nameRef.current) {
-          nameRef.current.removeEventListener("mouseenter", handleMouseEnter)
+        if (initialNameRef) {
+          initialNameRef.removeEventListener("mouseenter", handleMouseEnter) // Use the stored initial value in the cleanup function
         }
         if (interval) {
           clearInterval(interval)

@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useTheme } from "./ThemeContext"
 import Link from "next/link"
 import { useState } from "react"
-import { FaMinus, FaMoon, FaPlus, FaSun } from "react-icons/Fa"
+import { FaMinus, FaMoon, FaPlus, FaSun } from "react-icons/fa"
 
 const Navbar = () => {
   const { darkMode, toggleDarkMode } = useTheme()
