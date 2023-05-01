@@ -1,4 +1,4 @@
-import { FaGithub, FaGlobe } from "react-icons/Fa"
+import { FaGithub, FaGlobe } from "react-icons/fa"
 
 interface PortfolioItemProps {
   itemTitle: string
