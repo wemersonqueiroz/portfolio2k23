@@ -1,5 +1,3 @@
-import { FaMobileAlt } from "react-icons/Fa"
-
 interface ContactFieldProps {
   icon: React.ReactNode
   title: string
