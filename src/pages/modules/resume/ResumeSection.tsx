@@ -1,4 +1,4 @@
-import { FaGraduationCap, FaSuitcase } from "react-icons/Fa"
+import { FaGraduationCap, FaSuitcase } from "react-icons/fa"
 
 interface ResumeSectionProps {
   sectionTitle: string

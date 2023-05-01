@@ -1,9 +1,10 @@
 import { NextPage } from "next"
+import AboutMeCard from "./modules/about/AboutMeCard"
 
 const home: NextPage = () => {
   return (
     <>
-      <h1>Home</h1>
+      <AboutMeCard />
     </>
   )
 }
