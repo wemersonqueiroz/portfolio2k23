@@ -19,7 +19,7 @@ export default function AboutMeCard() {
         className="w-56 mx-auto mt-8 border-2 rounded-full dark:border-primary-light border-primary-dark"
         alt="Wemerson Queiroz"
       />
-      <p className="mt-4 text-2xl font-bold text-center text-black dark:text-white">
+      <p className="mt-4 text-2xl font-bold text-center text-white">
         Wemerson Queiroz
       </p>
       <ScrambleText
