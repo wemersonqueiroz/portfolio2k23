@@ -14,6 +14,7 @@ import H1 from "@/components/H1"
 export default function AboutMeCard() {
   return (
     <div className="flex flex-col w-full">
+      {/* eslint-disable @next/next/no-img-element */}
       <img
         src="./pfp.png"
         className="w-56 mx-auto mt-8 border-2 rounded-full dark:border-primary-light border-primary-dark"

@@ -8,7 +8,7 @@ const contact: NextPage = () => {
       <H1 text="Contact" />
       <div className="p-4 text-white border rounded-lg dark:border-primary-light border-primary-dark dark:text-black bg-background-primary-dark dark:bg-background-primary-light">
         <p>
-          I'm always open to discussing
+          I&apos;m always open to discussing
           <span className="block text-xl font-bold">
             product design work or partnerships.
           </span>
