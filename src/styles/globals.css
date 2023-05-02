@@ -120,3 +120,9 @@ canvas {
 .screen > .screen-content > .screen-title > .links-item:is(:hover, :focus) {
   text-decoration: none;
 }
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
